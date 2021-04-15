@@ -317,10 +317,6 @@ double quicksort(int a[], int p, int r)
 
 
 // function to print the array
-void sortDetails(int i)
-{
-    
-}
 
 void sortBuffer(int arr[msize],int size)
 {
@@ -374,9 +370,35 @@ double sortComparator(int arr[msize],int size)
     }
     return t2-t1;
 }
+void description()
+{
+    printf(" ");
+}
+void sortDetails()
+{
+    int ch;
+    printf("\n----\n");
+    while(1)
+    {
+    printf("Press the number for according to the sorting function you wanna know about.\n");
+    printf("1 : Bubble Sort\n2 : Selection Sort\n3 : MergeSort\n4 : Insertion sort\n5 : Radix Sort\n6 : Quick sort\n");
+    printf("Enter your choice : ");
+    scanf("%d",&ch);
+    switch(ch)
+        {
+            case 1 : printf("B");break;
+            case 2 : printf("S");break;
+            case 3 : printf("M");break;
+            case 4 : printf("I");break;
+            case 5 : printf("R");break;
+            case 6 : printf("Q");break;
+            default : return 0;
+        }
+    }
+}
 
 int main() {
-  // printf greetings statement.
+  // printf greetings statements.
   clock_t t;
   int ch;
   printf(" \nNote : For better results please enter the size which is a little larger than human intuition and which is under computer powers! A good range of size lies between 100 to 100,000\n\n");
@@ -390,7 +412,7 @@ int main() {
       switch(ch)
       {
         //  case 1 : description(); break;
-         // case 2 : sortDetails();break;
+          case 2 : sortDetails();break;
           case 3 : sortBuffer(arr,size);break;
           case 4 : sortComparator(arr,size);break;
         //  case 5 : moreInfo();break;
