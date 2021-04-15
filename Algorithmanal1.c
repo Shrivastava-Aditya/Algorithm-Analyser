@@ -4,11 +4,10 @@
 #define msize 100000
 int arr[msize];
 
-double autofill(int arr[msize])
+double autofill(int arr[msize],int size)
 {
     printf("Autofilling the array...\n");
         clock_t t;
-        int size;
         t = clock();
         for(int i=0;i<size;i++){arr[i] = size-i;}
         t = clock() - t;
@@ -49,7 +48,7 @@ int takeInput()
         }
         else
         {
-        t = autofill(arr);
+        t = autofill(arr,size);
         
         printf("Time took to autofill the array is %ld microseconds\n\n",t);
         printf("Elements given in the list are \n[");
@@ -75,7 +74,7 @@ int takeInput()
                 printf("]\n");
         printf("\n----\n");
         } else{
-        t = autofill(arr);
+        t = autofill(arr,size);
         
         printf("Time took to autofill the array is %ld microseconds\n\n",t);
         printf("Elements given in the list are \n[");
@@ -87,7 +86,7 @@ int takeInput()
     else if(size>=1000){
       printf("\nperfect! You enter the size %d\n",size);
       printf("\nAt this point we should autofill the array,since its unrealistic to fill the array manually\nTherefore we have an option to autofill the array by that is optimised for worst case scenerio.\n\n");
-      t = autofill(arr);
+      t = autofill(arr,size);
         
         printf("Time took to autofill the array is %ld microseconds\n\n",t);
         printf("Elements given in the list are \n[");
