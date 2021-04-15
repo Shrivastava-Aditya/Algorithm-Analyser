@@ -372,7 +372,7 @@ double sortComparator(int arr[msize],int size)
 }
 void description()
 {
-    printf(" ");
+    printf(" \nThis project is Known as sort algorithm analyser\n ");
 }
 void sortDetails()
 {
@@ -381,7 +381,7 @@ void sortDetails()
     while(1)
     {
     printf("Press the number for according to the sorting function you wanna know about.\n");
-    printf("1 : Bubble Sort\n2 : Selection Sort\n3 : MergeSort\n4 : Insertion sort\n5 : Radix Sort\n6 : Quick sort\n");
+    printf("1 : Bubble Sort\n2 : Selection Sort\n3 : MergeSort\n4 : Insertion sort\n5 : Radix Sort\n6 : Quick sort\nAny other number for exit\n");
     printf("Enter your choice : ");
     scanf("%d",&ch);
     switch(ch)
@@ -411,7 +411,7 @@ int main() {
       scanf("%d",&ch);
       switch(ch)
       {
-        //  case 1 : description(); break;
+          case 1 : description(); break;
           case 2 : sortDetails();break;
           case 3 : sortBuffer(arr,size);break;
           case 4 : sortComparator(arr,size);break;
