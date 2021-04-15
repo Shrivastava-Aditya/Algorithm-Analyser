@@ -364,13 +364,13 @@ double sortComparator(int arr[msize],int size)
             case 5 : t2 = radixsort(arr,size); break;
             case 6 : t2 = quicksort(arr,0,size-1);break;
         }
-    printf("The Time taken by 1st function of choice is :  %ld\nThe time taken by 2nd function of choice is : %ld",t1,t2);
-    printf("The time difference is, %ld : \n",t2-t1);
+    printf("\n\nThe Time taken by 1st function of choice is :  %ld microseconds\nThe time taken by 2nd function of choice is : %ld microseconds\n",t1,t2);
+    printf("The time difference is, %ld microseconds: \n",t2-t1);
     if(t2>t1){
-        printf("We can simpy say that 1st function is faster");
+        printf("\nWe can simpy say that 1st function is faster\n");
     }
     if(t1>t2){
-    printf("We can simpy say that 2nd function is faster");
+    printf("\nWe can simpy say that 2nd function is faster\n\n\n");
     }
     return t2-t1;
 }
