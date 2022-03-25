@@ -485,8 +485,6 @@ int main() {
   // printf greetings statements.
   clock_t t;
   int ch;
-  printf("--Welcome to our project--\n\nThis project has been made by \nAditya Raj Shrivastava (1RN19CS007) and \nGali Keerthi Reddy(1RN19CS052)\n\nPress Any Key to continue\n");
-  getchar();
   description();
   printf("\nThe main purpose of the project is to get you famialarise with some of the very basic building block of computer algorithms,\nThe project works in following steps\n1. We give input\n2. The Input gets Arranged in array\n3. We select the required option from main menu\n3. There are some Special Function Like sort comparator That is used to compare between to sorting algorithms\n4. Array gets sorted\n5. Time gets recorded\n6. We can analyse the different Time taken by the different sorting algorithms\n\nPress Any key To Continue\n");
   getchar();
